@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            <!-- background-color: rgba(0, 255, 255, 0.288); -->
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            background-image: url(background-img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            gap: 20px;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        img{
+            height: 100px;
+        }
+        .profile{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            -webkit-backdrop-filter: blur();
+            backdrop-filter: blur(5px);
+            background-color: rgba(250, 235, 215, 0.219);
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px;
+        }
+        .maface{
+            border-radius: 50%;
+            height: 200px;
+            min-height: 10vh;
+            border: solid white;
+        }
+        .name{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 5px;
+            border-bottom: solid 2px white;
+            text-align: center;
+        }
+        #fbico {
+            height: 50px;
+        }
+        #description{
+            font-size: 18px;
+            border-bottom: none;
+            text-align: justify;
+            max-width: 800px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 90%; 
+            gap: 20px;
+        }
+        #birthday{
+            font-size: 18px;
+            border-bottom: none;
+        }
+        #card{
+            width: 300px;
+            min-height: 120px;
+        }
+        #subface {
+            height: 150px;
+            width: 150px;
+        }
+        #pics{
+            border-radius: 10px;
+            height: 250px;
+            min-height: 100px;
+        }
+        #hobby-card{
+            width: 150px;
+            height: 160px;
+            
+        }
+    </style>
+    <div class="profile">
+        <img class="maface" src="profile.jpg" alt="">
+        <div class = "name">Francis Nicole P. Laon</div>
+       <a href="https://www.facebook.com/Francislaon14/" target="_blank"> <img id="fbico" src="fbico.png" alt=""></a>
+    </div>
+    <div class="name" style="width: 50%; text-align:center;">About Me:</div>
+    <div class="name" id="description">I prefer computer-related lessons than core subjects. I hate social gatherings; it drains my mind. People always think that I'm not approachable person because I rarely talk to someone, especially to strangers, but it's just that I don't know how to start a conversation.</div>
+
+    <div class="container">
+        <div class="profile" id="card">
+            <div class="name">BIRTHDAY</div>
+            <div class="name" id="birthday">
+                November 14, 2006
+            </div>
+        </div>
+        <div class="profile" id="card">
+            <div class="name">STRAND</div>
+            <div class="name" id="birthday">Information and Communications Technology</div>
+        </div>
+        <div class="profile" id="card">
+            <div class="name">SCHOOL</div>
+            <div class="name" id="birthday">West Philippines Institute of Tourism Science and Technology</div>
+        </div>
+        <div class="profile" id="card">
+            <div class="name">LAST ACHIEVEMENT ATTAINED</div>
+            <div class="name" id="birthday">With High Honor</div>
+        </div>
+        <div class="profile" id="card">
+            
+            <div class="name">I LIVE IN</div>
+            <div class="name" id="birthday">Bo. Luz, Limay, Bataan</div>
+        </div>
+        <div class="profile" id="card">
+            
+            <div class="name">COURSE I WANT TO TAKE</div>
+            <div class="name" id="birthday">Bachelor of Science in Information Technology (BSInfoTech)</div>
+        </div>
+    </div>
+    <div class="name" style="width: 50%; text-align:center;">Photos With My Friends</div>
+    <div class="profile">
+        <div class="container" style="width: 100%; flex-wrap:wrap-reverse;">
+            <div style="display: flex; flex-direction: column; justify-content:space-evenly; align-items:center; gap: 15px; padding: 10px">
+               <img class="maface" id="subface" src="pwf/dave.jpg" alt="">
+               <div class="name" id="birthday">Dave Arcangel Manalo</div>
+               <img class="maface" id="subface" src="pwf/michelle.jpg" alt="">
+               <div class="name" id="birthday">Michelle Suayan</div>
+            </div>
+            <div class="profile" style="height: 100%;">
+                <img src="pwf/picWFriends.jpg" id="pics" alt="">
+                <img src="pwf/picWFriends2.jpg" id="pics" alt="">
+            </div>
+        </div>
+        <div id="description" class="name" style="padding-top: 20px;">
+            They're my friends, Dave and Michelle, we've been friends since junior high school days. Although we don't meet up often, we update each other online.
+        </div>
+    </div>
+    <div class="name" style="width: 50%; text-align:center;">My Hobbies</div>
+    <div class="profile">
+        <div style="display:flex;flex-direction:row; gap:20px; flex-wrap:wrap; justify-content:space-evenly; align-items:center">
+            <div class="profile" id="hobby-card" >
+                <img src="hobbies/readingManga.png" alt="" style="height: 150px;">
+                <div class="name" id="description">Reading Manga</div>
+            </div>
+            <div class="profile" id="hobby-card" >
+                <img src="hobbies/watchingAnime.png" alt="" style="height: 150px;">
+                <div class="name" id="description">Watching Anime</div>
+            </div>
+            <div class="profile" id="hobby-card" >
+                <img src="hobbies/takingPictures.png" alt="" style="height: 150px;">
+                <div class="name" id="description">Taking Pictures</div>
+            </div>
+        </div>
+        <div id="description" class="name" style="padding-top: 20px;">
+            I do a lot of things as "my hobby", but the things I do such as reading manga, watching anime, and taking pictures are the ones I like to do the most.
+        </div>
+    </div>
+</body>
+</html>
